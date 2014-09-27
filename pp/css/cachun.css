@@ -1,0 +1,432 @@
+@font-face
+{
+font-family: Gandhi;
+src: url('../../ttf/GandhiSans-Regular.otf');
+}
+
+@font-face
+{
+  font-family: GandhiSans_Bold;
+  src: url('../../ttf/GandhiSans_Bold');
+}
+
+@font-face
+{
+  font-family: GandhiSans_Italic;
+  src: url('../../ttf/GandhiSans_Italic');
+}
+
+@font-face
+{
+  src: url('../../ttf/GandhiSans_BoldItalic');
+}
+
+/* Cuerpo de la página. Atributos generales. */
+
+#footer{
+  display: none;
+}
+
+body{
+  margin: 0;
+  font-family:Gandhi;
+  font-size: 11pt;
+  line-height: 1.5;
+  text-align: left;
+  height:100%;
+  width: 100%;
+}
+
+.oculto{display:none}
+.visible{display:block}
+
+.encabezado nav ul{
+  list-style: none;
+  margin: 0 0;
+}
+
+.encabezado nav a:hover, .encabezado nav a:active,
+.encabezado nav .active a:link, .encabezado nav .active a:visited {
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
+
+.encabezado li:hover a{
+  transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  background: black;
+  color: #FFF !important;
+}
+
+.encabezado nav li:hover > a div{
+  transform: skew(20deg);
+  -webkit-transform: skew(20deg);
+}
+
+.encabezado nav ul li a {
+  line-height: 90px;
+  color:0;
+  text-align: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: #444;
+}
+
+@media only screen and (min-width: 480px){
+  body{
+    min-width: 1000px;}
+
+  .PantallaChica{
+    display: none;
+  }
+  .encabezado{
+    width: 100%;
+    height: 90px;
+    display: block;
+  }
+  .encabezado nav a:link, .encabezado nav a:visited{
+    color:0;
+    display: inline-block;
+    padding: 5px 25px;
+    height: 90px;
+  }
+  .encabezado nav{
+    float: left;
+    height: 90px;
+    margin-left: -20px;
+    width: 760px;
+  }
+  .encabezado nav ul li{
+    float: left;
+    display: inline;
+    color:0;
+  }
+  #pagina{
+    margin: 0 auto;
+    width: 1100px;
+    clear:both;
+    height: 100px;
+  }
+  .LogoFiltroMenu{
+    text-align: center;
+    margin-top: 25px;
+    float:left;
+    width: 160px;
+  }
+  .LogoFiltroMenu img{
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ContenedorIconosContacto{
+    width: 150px;
+    float:right;
+    margin-top: 40px;
+    margin-right: 12px;
+  }
+  .IconoArriba {
+    float: left;
+    margin-left: 5px;
+    max-width: 27px;
+  }
+
+  .cuerpo{
+    margin: 0 0;
+    width:100%;
+    clear:both;
+    height: auto;
+  }
+  .cuerpo2{
+    margin:0 auto;
+    margin-bottom: -80px !important;
+    width:1100px;
+    height: 700px;
+    clear:both;
+    background-color: #FFF;
+  }
+  .MenuPrincipal{
+    width:800px;
+    float:left;
+    min-width: 800px;
+  }
+
+  #logo {
+    width: 10%;
+    height: auto;
+    margin: 2% auto;
+    min-width: 100px;
+    float:left;
+  }
+  .ContenedorFiltros div:not(.filtro):not(.subfiltro):not(.seleccion):not(.subseleccion):not(.filtro2):not(.seleccion2) {
+    width: 180px;
+  }
+  .ContenedorFiltros{
+    margin-top: 176px;
+    float: left;
+    margin-left: -800px;
+    border-radius: 5px;
+    height: 800px;
+    width:1000px;
+    /*background-color: #FFF;*/
+    z-index: -1;
+  }
+  .subtitulo{
+    position: absolute;
+    top:280px;
+  }
+  .filtros > div{
+    margin-top: 10px;
+  }
+  .filtros{
+    float: right;
+    margin: 0;
+    height:250px;
+    /*background-color: #FFF;*/
+    text-align: right;
+    }
+  .subfiltros{
+    opacity: 0;
+    float: right;
+    margin: 50px 600px 0px 0px;
+    display: visible;
+    height:211px;
+    /*background-color: #FFF;*/
+    text-align: right;
+    font-size: 13pt;
+  }
+  .filtros > div {
+    display: inline-block;
+    float: right;
+    /*background-color: #FFF;*/
+  }
+  .subfiltros > div {
+    display: inline-block;
+    float: right;
+    /*background-color: #FFF;*/
+    margin-top: 10px;
+  }
+  .filtro{
+    float:right;
+    width: 18px;
+    height: 18px;
+    border-radius:100%;
+    background-color:0;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 10px;
+    }
+  .filtro2{
+    float:right;
+    width: 16px;
+    height: 16px;
+    border-radius:100%;
+    background-color:0;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left: 10px;
+    z-index: 1000;
+    }
+    .subfiltro{
+    float:right;
+    width: 18px;
+    height: 18px;
+    border-radius:100%;
+    background-color:#424242;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 10px;
+    }
+    .subseleccion{
+    float:right;
+    width: 18px;
+    height: 18px;
+    border-radius:100%;
+    background-color:#FFBF00;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 10px;
+    }
+    .adentro{
+      position:relative;
+    }
+    .adentroS{
+      color:#a1a1a1;
+      display: visible;
+      width: 160px;
+      opacity: 1;
+    }
+    .afuera{
+      opacity: 0;
+      display: none;
+      width: 160px;
+      margin-top: -300px;
+    }
+  .seleccion{
+    float:right;
+    width: 18px;
+    height: 18px;
+    border-radius:100%;
+    background-color:#297ACC;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  .seleccion2{
+    float:right;
+    width: 16px;
+    height: 16px;
+    border-radius:100%;
+    background-color:#297ACC;
+    margin-top: 3px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  .apagado{
+    opacity: 1;
+  }
+  #filtros{
+    list-style: none;
+    line-height: 2 !important;
+    text-align: right;
+  }
+  #mosaico{
+    display: inline-block;
+    float: right;
+    margin-right: 60px;
+    width:800px;
+    height:700px;
+    background-color: #FFF;
+  }
+  #separador{
+    display: inline-block;
+    float: left;
+    width:40px;
+    height:700px;
+  }
+  #separadorH{
+    margin: 0;
+    width: 110%;
+    display:block;
+    height: 5px;
+    background-color: black;
+  }
+  .ContenedorImagenM{
+    width: 190px;
+    height: 190px;
+    margin-top: 10px;
+    margin-right: 10px;
+    float: left;
+  }
+  .MosaicoImagen{
+    background-size: cover !important;
+    width: 190px;
+    position: absolute;
+    height: 190px;
+    float: none;
+    transition: filter 4s ease;
+    -webkit-transition: -webkit-filter 4s ease;
+    -moz-transition: -moz-filter 2s ease;
+    -o-transition: -o-filter 2s ease;
+    -ms-transition: -ms-filter 2s ease;
+  }
+  .info{
+   position: absolute;
+   color: blue;
+   width: 190px;
+   height: 190px;/*DAVID*/
+   float: none;
+   display: visible;
+   opacity: 0;
+  }
+  .ContenedorImagenM:hover  .MosaicoImagen {
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    transition: filter 2s;
+    opacity: 0.8;
+  }
+  .info hover{
+    background-color: #BBB;
+    color: #FFF;
+  }
+  .info h1{
+    font-size: 14pt;
+  }
+  .info h2{
+    font-size: 12pt;
+  }
+  .MosaicoColumna1{
+    position: relative;
+    display:inline-block;
+    clear:both;
+    width:190px;
+    height:700px;
+    margin-right: 10px;
+    background-color: #FFF;
+    }
+    .MosaicoColumna{
+      display:inline-block;
+      width:190px;
+      height:700px;
+      margin-right: 10px;
+      background-color: #FFF;
+    }
+    #i1{
+      margin-top: 190px;
+    }
+
+  #i3{
+    margin-top: 115px;
+  }
+
+  #i5{
+    margin-top: 0px;
+  }
+
+  #i8{
+    margin-top: 90px;
+  }
+}
+
+/*El manu */
+
+/*html {
+  height:100%;
+  width: 100%;
+  margin: 0;
+}*/
+
+#mydiv { 
+  width:1000px;
+  height:100%;
+  background: url(../../manuel/prueba.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#content {
+  height: 700px;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.titulo {
+  font-family: "gandhi_sansbold"
+color:#dd0000;
+font-size: 60px;
+font-weight:bold;
+}
+
+.texto{
+  font-family: "gandhi_sansregular"
+  color:#000;
+  font-size: 16px;
+
+}
